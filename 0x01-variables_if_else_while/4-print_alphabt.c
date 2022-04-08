@@ -14,7 +14,7 @@ int main(void)
 
 	while (alphMin <= 122)
 	{
-		if ((alphMin != 101) AND (alphMin != 113))
+		if ( (alphMin != 101) AND (alphMin != 113) )
 		{
 			putchar(alphMin);
 		}
