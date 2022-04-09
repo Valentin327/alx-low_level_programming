@@ -1,0 +1,23 @@
+#include <stdio.h>
+/* more headers goes there */
+/**
+ * main - Entry point
+ *
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(voi)
+{
+	int n = 122;
+
+	while (n >= 97)
+	{
+		putchar(n);
+		n--;
+	}
+
+	putchar('\n');
+	return (0);
+}
+
