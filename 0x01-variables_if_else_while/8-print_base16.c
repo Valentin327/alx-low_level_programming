@@ -9,17 +9,18 @@
 
 int main(void)
 {
-	int numbers;
+	int numbers = '0';
 	char alpha16 = 'a';
 
-	for (numbers = 0; numbers <= 9; numbers++)
+	while (alpha16 <= '0')
 	{
-		putchar(numbers);
-	}
-	while (alpha16 <= 'f')
-	{
-		putchar(alpha16);
-		alpha16++;
+		while (numbers <= '9')
+		{
+			putchar(numbers);
+			numbers++;
+		}
+	putchar(alpha16);
+	alpha16++;
 	}
 	putchar('\n');
 	return (0);
