@@ -19,7 +19,7 @@ int main(void)
 	}
 	while (alpha16 <= 'f')
 	{
-		putchar(alpha16)
+		putchar(alpha16);
 		alpha16++;
 	}
 	putchar('\n');
