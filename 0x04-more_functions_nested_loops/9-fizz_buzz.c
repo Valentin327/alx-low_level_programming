@@ -18,6 +18,9 @@ int main(void)
 			printf("BUZZ\t");
 		else
 			printf("%d\t", i);
+		if (i < 100)
+			printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
