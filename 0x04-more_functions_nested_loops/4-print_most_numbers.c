@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_most_numbers
+ * print_most_numbers - function that print numbers without 2 and 4
  *
  * Return: null
  */
@@ -16,4 +16,5 @@ void print_most_numbers(void)
 			_putchar(i);
 		}
 	}
+	_putchar('\n');
 }
