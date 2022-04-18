@@ -2,7 +2,7 @@
 /** more headers goes there */
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * Return: Always 0
  */
@@ -10,6 +10,7 @@
 int main(void)
 {
 	int sum, i;
+
 	sum = 0;
 
 	for (i = 0; i < 1024; i++)
