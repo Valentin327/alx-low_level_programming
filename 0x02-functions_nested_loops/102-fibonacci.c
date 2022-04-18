@@ -15,7 +15,11 @@ int main(void)
 
 	for (i = 3; i <= 50; ++i)
 	{
-		printf("%d, ", next);
+		printf("%d", next);
+		if (i != 50)
+		{
+			printf(", ");
+		}
 		t1 = t2;
 		t2 = next;
 		next = t1 + t2;
