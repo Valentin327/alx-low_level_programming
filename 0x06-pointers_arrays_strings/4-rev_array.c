@@ -2,6 +2,7 @@
 /**
  * reverse_array - function that reverse a string
  * @n: the number of elements of the array
+ * @a: the string to reverse
  * Return: no return
  */
 void reverse_array(int *a, int n)
