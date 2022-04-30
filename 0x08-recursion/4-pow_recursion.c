@@ -7,17 +7,17 @@
  */
 int _pow_recursion(int x, int y)
 {
+	int pw = 1;
 
-	if (y == 0)
+	if (y < 0)
 	{
-		return (1);
+		return (-1);
 	}
-	else if ( y % 2 == 0)
+	else if (!y)
 	{
-		return (_pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
+		return (1)
 	}
-	else
-	{
-		return (x * _pow_recursion(x, y / 2) * _pow_recursion(x, y / 2));
-	}
+	pw = _pow_recursion(x, y - 1);
+
+	return (pw * x);
 }
