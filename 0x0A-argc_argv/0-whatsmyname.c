@@ -8,7 +8,7 @@
  * @argv: an array that contain the value of arguments
  * Return: Always 0
  */
-int main(argc, char *argv[])
+int main(argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", argv[0]);
 	return (0);
