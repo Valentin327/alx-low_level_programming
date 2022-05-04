@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - add two numbers
- * @argc: the number of arguments
- * @argv: an array that content values of arguments
- * Return: Always 0
+ * _atoi - function that convert a string to an integer
+ * @s: string to convert
+ * Return: int converted from a string
  */
 int _atoi(char *s)
 {
