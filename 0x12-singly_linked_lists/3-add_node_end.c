@@ -8,7 +8,6 @@
  * of linked list
  * @head: the list
  * @str: a string to duplicate
- * 
  * Return: the address of the new element
  */
 list_t *add_node_end(list_t **head, const char *str)
