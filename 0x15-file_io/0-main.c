@@ -4,7 +4,8 @@
 
 /**
  * main - check the code
- *
+ * @ac: arguments counter
+ * @av: variable array
  * Return: Always 0
  */
 int main(int ac, char **av)
@@ -21,4 +22,4 @@ int main(int ac, char **av)
 	n = read_textfile(av[1], 1024);
 	printf("\n(printed chars: %li)\n", n);
 	return (0);
-}	
+}

@@ -6,7 +6,7 @@
 
 /**
  * read_textfile - function that reads
- * a text file and prints 
+ * a text file and prints
  * it to the POSIX standard output
  * @filename: pointeur to the file
  * @letters: number of letters to read and print
@@ -29,7 +29,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	
 	buf[letters] = '\0';
 	close(fd);
 	free(buf);
