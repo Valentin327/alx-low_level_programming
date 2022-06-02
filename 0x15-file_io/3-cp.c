@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int ff_fd, ft_fd;
-	int c_ff, c_ft, r;
+	int r;
 	char buf[BUFSIZ];
 
 	if (argc != 3)
@@ -36,18 +36,17 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	c_ff = close(ff_fd);
-	c_ft = close(ft_fd);
-	if (c_ff == -1 || c_ft == -1)
+	if (r == -1)
 	{
-		if (c_ff == -1)
-		{
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	if (close(ff_fd) == -1 || close(ft_fd) == -1)
+	{
+		if (close(ff_fd) == -1)
 			dprintf(2, "Error: Can't close fd %d\n", ff_fd);
-		}
-		if (c_ft == -1)
-		{
+		if (close(ft_fd) == -1)
 			dprintf(2, "Error: Can't close fd %d\n", ft_fd);
-		}
 		exit(100);
 	}
 	return (1);
