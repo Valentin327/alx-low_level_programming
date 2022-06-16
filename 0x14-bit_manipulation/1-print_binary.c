@@ -10,7 +10,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, flag;
+	unsigned long int i, flag;
 
 	if (n == 0)
 		_putchar('0');
