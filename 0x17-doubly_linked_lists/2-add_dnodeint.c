@@ -6,13 +6,13 @@
  * node at the beginning of a list
  * @head: pointer to the address of
  * the new element
- *
+ * @n: new element to add
  * Return: address of the new element
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new_element;	
+	dlistint_t *new_element;
 
 	if (!head)
 	{
